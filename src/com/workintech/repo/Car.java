@@ -16,6 +16,14 @@ public class Car {
         this.engine=true;
     }
 
+    public boolean isEngine() {
+        return engine;
+    }
+
+    public int getWheels() {
+        return wheels;
+    }
+
     public int getCylinders() {
         return cylinders;
     }
@@ -33,17 +41,20 @@ public class Car {
     }
 
     public String startEngine(){
-        return "the car's engine is starting" +getClass().getSimpleName();
+        System.out.println(getClass().getSimpleName());
+        return "the car's engine is starting" ;
 
     }
 
     public String accelerate(){
-        return "the car is accelerating" +getClass().getSimpleName();
+        System.out.println(getClass().getSimpleName());
+        return "the car is accelerating";
 
     }
 
     public String brake(){
-        return "the car is braking" +getClass().getSimpleName();
+        System.out.println(getClass().getSimpleName());
+        return "the car is braking";
 
     }
 
